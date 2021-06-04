@@ -24,21 +24,21 @@
 > 
 > 逆向工程模块 mscrowdfunding06-common-reverse
 
-前台模块---------------------------------------------------端口号                                                 
-> 注册中心：mscrowdfunding08-member-eureka------------------1000
+前台模块------------------------------------------------------------------端口号                                                 
+> 注册中心：mscrowdfunding08-member-eureka---------------------1000
 > 
-> MySQL数据服务：mscrowdfunding10-member-mysql-provider-----2000
+> MySQL数据服务：mscrowdfunding10-member-mysql-provider----2000
 > 
-> Redis数据服务：mscrowdfunding11-member-redis-provider-----3000
+> Redis数据服务：mscrowdfunding11-member-redis-provider-------3000
 > 
 > 会员中心：mscrowdfunding12-member-authentication-consumer-4000
 > 
-> 项目维护：mscrowdfunding13-member-project-consumer--------5000
+> 项目维护：mscrowdfunding13-member-project-consumer---------5000
 > 
-> 订单维护：mscrowdfunding14-member-order-consumer----------7000
+> 订单维护：mscrowdfunding14-member-order-consumer-----------7000
 > 
-> 支付功能：mscrowdfunding15-member-pay-consumer------------8000
+> 支付功能：mscrowdfunding15-member-pay-consumer-------------8000
 > 
-> 网关：mscrowdfunding16-member-zuul-------------------------80
+> 网关：mscrowdfunding16-member-zuul------------------------------80
 
 更详细项目信息可以关注[Readme](https://gitee.com/baiwei_melon_seeds/ms-crowd/edit/master/Readme)笔记文件夹。
