@@ -16,8 +16,8 @@ eureka:
       defaultZone: http://localhost:1000/eureka/
 aliyun:
   oss:
-    access-key-id: 
-    access-key-secret: 
-    bucket-domain: 
-    bucket-name: 
-    end-point: 
+    access-key-id: 略
+    access-key-secret: 略
+    bucket-domain: 略
+    bucket-name: 略
+    end-point: 略
