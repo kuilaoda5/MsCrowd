@@ -1,0 +1,55 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>cn.melonseed.crowd</groupId>
+  <artifactId>mscrowdfunding07-member-parent</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  
+  <!-- 在parent工程进行依赖管理 -->
+<dependencyManagement>
+    <dependencies>
+        <!-- 导入SpringCloud需要的依赖信息 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-dependencies</artifactId>
+            <version>Hoxton.SR8</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency>
+        <!-- SpringBoot依赖信息 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-dependencies</artifactId>
+            <version>2.3.3.RELEASE</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency>
+
+        <!--SpringBoot整合MyBatis的依赖-->
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>2.1.3</version>
+        </dependency>
+
+        <!--druid依赖信息-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.1.17</version>
+        </dependency>
+    </dependencies>
+</dependencyManagement>
+  <modules>
+  	<module>mscrowdfunding08-member-eureka</module>
+  	<module>mscrowdfunding09-member-entity</module>
+  	<module>mscrowdfunding10-member-mysql-provider</module>
+  	<module>mscrowdfunding11-member-redis-provider</module>
+  	<module>mscrowdfunding12-member-authentication-consumer</module>
+  	<module>mscrowdfunding13-member-project-consumer</module>
+  	<module>mscrowdfunding14-member-order-consumer</module>
+  	<module>mscrowdfunding15-member-pay-consumer</module>
+  	<module>mscrowdfunding16-member-zuul</module>
+  	<module>mscrowdfunding17-member-api</module>
+  </modules>
+</project>

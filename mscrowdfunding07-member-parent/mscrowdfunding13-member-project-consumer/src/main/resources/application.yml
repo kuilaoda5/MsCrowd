@@ -1,0 +1,23 @@
+server:
+  port: 5000
+spring:
+  application:
+    name: crowd-project
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+  redis:
+    host: 192.168.2.215
+  session:
+    store-type: redis
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka/
+aliyun:
+  oss:
+    access-key-id: LTAI5tEQAPf4DZpE3QUMmeD8
+    access-key-secret: OGtPLPhbafQgJ6IhTtybONLZcfcVdo
+    bucket-domain: http://melonseed.oss-cn-beijing.aliyuncs.com
+    bucket-name: melonseed
+    end-point: oss-cn-beijing.aliyuncs.com

@@ -1,0 +1,26 @@
+server:
+  port: 7000
+spring:
+  application:
+    name: crowd-pay
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+  redis:
+    host: 192.168.2.215
+  session:
+    store-type: redis
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka/
+ali:
+  pay:
+    ali-pay-public-key: 略
+    app-id: 略
+    charset: utf-8
+    gateway-url: https://openapi.alipaydev.com/gateway.do
+    merchant-private-key: 略
+    notify-url: http://8bwgvf.natappfree.cc/pay/notify
+    return-url: http://localhost/pay/return
+    sign-type: RSA2
